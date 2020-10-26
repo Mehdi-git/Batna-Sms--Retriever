@@ -2,7 +2,6 @@
     package="ir.batna.smsretrieverlibrary">
 
     <application>
-
         <receiver android:name=".SmsRetriever"
             android:enabled="true"
             android:exported="true">
@@ -10,7 +9,6 @@
                 <action android:name="ir.batna.otpreader.SendBroadcastActivity" />
             </intent-filter>
         </receiver>
-
     </application>
 
 

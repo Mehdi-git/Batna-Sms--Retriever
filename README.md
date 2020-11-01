@@ -48,7 +48,7 @@ public class MainActivity extends ActionBarActivity implements ISmsListener {
         
         
         //to register the interface
-        ISmsListener.bind(this);
+        SmsRetriever.bind(this);
     }
 
     

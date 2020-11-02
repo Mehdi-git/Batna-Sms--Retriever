@@ -29,7 +29,7 @@ Step 3- Implement the following service in AndroidManifest.xml:
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="ir.batna.otpreader.SendBroadcastActivity" />
+                <action android:name="ir.batna.otpreader" />
             </intent-filter>
         </receiver>
         
@@ -48,12 +48,12 @@ public class MainActivity extends ActionBarActivity implements ISmsListener {
         
         
         //to register the interface
-        ISmsListener.bind(this);
+        SmsRetriever.bind(this);
     }
 
     
    @Override
-    public void otpReceiver(String otpCode) {
+    public void otpReceived(String otpCode) {
     
     
         //Do whatever you want to do with the text
